@@ -45,5 +45,5 @@ os aprendizados de javascript manipulação da DOM, que aprendi em cursos da Alu
 <h4>Me siga em minhas redes sociais</h4>
 
 <a href="https://www.instagram.com/matteusfrancischini/?hl=pt-br"> <img width="50" height="50" src="./social/instagram.svg"> </a>
-<a href="https://www.linkedin.com/in/matteus-henryk-086451196/"> <img  src="./social/linkedin.svg"> </a>
-<a href="https://app.rocketseat.com.br/me/matteus-henryk-1590455615"> <img  src="./social/rocket.svg"> </a>
+<a href="https://www.linkedin.com/in/matteus-henryk-086451196/"> <img width="50" height="50" src="./social/linkedin.svg"> </a>
+<a href="https://app.rocketseat.com.br/me/matteus-henryk-1590455615"> <img width="50" height="50" src="./social/rocket.svg"> </a>
