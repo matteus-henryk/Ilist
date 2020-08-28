@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  --color-primary: #5e4c5a;
+  --color-primary-light: #5e4c5a91;
+  --color-primary-dark: #52424e;
+  --color-secondary: #55917f;
+  --color-secondary-light: #5a9c88;
+  --color-card: #EDEDED;
+  --color-danger: #d62828;
+  --color-success: #5cb85c;
+  --color-success-dark: #4a964a;
+
+  font-size: 70%;
+}
+

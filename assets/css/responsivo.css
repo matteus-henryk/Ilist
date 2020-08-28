@@ -1,0 +1,22 @@
+@media (min-width: 760px) {
+  .titulo {
+    margin: 1%;
+    margin-bottom: 1%;
+    font-size: 3rem;
+  }
+  .cabecalho {
+    width: 90%;
+    border-radius: 1rem;
+    margin-top: 1%;
+  }
+
+  :root {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    font-size: 90%;
+  }
+}

@@ -1,0 +1,80 @@
+.container {
+  width: 80%;
+  max-width: 980px;
+  margin: -1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-card);
+  border-radius: 1rem;
+  box-shadow: .5px .5px  1rem var(--color-primary-light);
+}
+
+
+.lista {
+  width: 100%;
+  padding: 2%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.lista-item {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  border-bottom: 1px solid var(--color-secondary-light);
+  word-break: break-word;
+}
+
+
+.lista-item .botao-conclui-lista,
+.lista-item .botao-deleta-lista {
+  border: none;
+  padding: .6rem;
+  cursor: pointer;
+  border-radius: .6rem;
+}
+
+.lista-item .botao-deleta-lista {
+  color: var(--color-card);
+  background: var(--color-danger);
+}
+
+.lista-item .botao-conclui-lista {
+  color: var(--color-card);
+  background: var(--color-success);
+}
+
+.lista-item.done .botao-conclui-lista {
+  background: var(--color-success-dark)
+}
+
+.lista-item.done .content{
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+
+.lista-item.animacao {
+  animation: deletar 500ms linear 0 1 normal none;
+  transition: animation 500ms
+}
+
+@keyframes deletar {
+  0%{
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0)
+  }
+}
