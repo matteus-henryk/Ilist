@@ -1,15 +1,15 @@
 var itensDaLista = JSON.parse(localStorage.getItem('itens_lista')) || [];
 
-console.log(itensDaLista)
-
 renderizarLista(itensDaLista)
 
 const adicionarItem = () => {
   const inputNomeLista = document.querySelector('[data-form-name]');
   
   if(inputNomeLista.value == ''){
-    alert('O campo está vazio!');
+    mensagemErro();
     return;
+  }else {
+    removeMensagemErro();
   }
 
   itensDaLista.push(inputNomeLista.value)
