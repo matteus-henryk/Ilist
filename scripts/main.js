@@ -1,28 +1,20 @@
-import BotaoDeleta from './components/BotaoDeletar.js';
-import BotaoConcluir from './components/BotaoConcluir.js';
-import criarItemLista from './criarItemLista.js'
+var itensDaLista = JSON.parse(localStorage.getItem('itens_lista')) || [];
 
-const botaoNomeLista = document.querySelector('[data-form-name-button]');
-const itensDaLista = JSON.parse(localStorage.getItem('itens_lista')) || [];
+console.log(itensDaLista)
 
-const criarLista = (evento) => {
-  evento.preventDefault();
+renderizarLista(itensDaLista)
 
+const adicionarItem = () => {
   const inputNomeLista = document.querySelector('[data-form-name]');
-  const ul = document.querySelector('[data-lista]');
+  
+  if(inputNomeLista.value == ''){
+    alert('O campo está vazio!');
+    return;
+  }
 
-  const valorInput = inputNomeLista.value;
-
-  const itemLista = criarItemLista();
-  const conteudo = `<p class="content">${valorInput}</p>`;
-  itemLista.innerHTML = conteudo;
-
-  itemLista.appendChild(BotaoConcluir());
-  itemLista.appendChild(BotaoDeleta());
-
-  ul.appendChild(itemLista);
+  itensDaLista.push(inputNomeLista.value)
+  renderizarLista(itensDaLista);
+  saveToStorage();
 
   inputNomeLista.value = '';
 };
-
-botaoNomeLista.addEventListener('click', criarLista);

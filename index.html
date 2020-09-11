@@ -21,20 +21,25 @@
 
     <h3 class="label-criar" for="criar-lista">Item da lista</h3>
     <div class="cabecalho-input">
-      <input class="input-criar-lista" type="text" name="crar-lista" data-form-name>
-      <button class="botao-criar-lista" data-form-name-button>Adicionar</button>
+      <input class="input-criar-lista" type="text" data-form-name>
+      <button class="botao-criar-lista" onclick="adicionarItem()" data-form-name-button>Adicionar</button>
     </div>
   </header>
 
   <main class="container" data-container>
 
     <ul class="lista" data-lista>
-
+      <li class="lista-item done"><p class="content">zfhadfh</p><button class="botao-conclui-lista">Concluir</button><button class="botao-deleta-lista" onclick="deletarItem(0, zfhadfh)">Deletar</button></li>
     </ul>
 
   </main>
 
-  <script type="module" src="./scripts/main.js"></script>
+  <script src="scripts/components/BotaoConcluir.js"></script>
+  <script src="scripts/components/BotaoDeletar.js"></script>
+  <script src="./scripts/saveToStorage.js"></script>
+  <script src="./scripts/function.js"></script>
+  <script src="./scripts/criarItemLista.js"></script>
+  <script src="./scripts/main.js"></script>
 </body>
 
 </html>
