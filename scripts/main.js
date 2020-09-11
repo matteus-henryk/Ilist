@@ -3,6 +3,7 @@ import BotaoConcluir from './components/BotaoConcluir.js';
 import criarItemLista from './criarItemLista.js'
 
 const botaoNomeLista = document.querySelector('[data-form-name-button]');
+const itensDaLista = JSON.parse(localStorage.getItem('itens_lista')) || [];
 
 const criarLista = (evento) => {
   evento.preventDefault();
